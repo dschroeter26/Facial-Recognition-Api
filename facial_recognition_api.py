@@ -48,7 +48,9 @@ def facial_recognition():
                 results.append({
                     "name": match['name'],
                     "rank": match['rank'],
-                    "unit": match['unit']
+                    "unit": match['unit'],
+                    "dutyTitle": match['dutyTitle'],
+                    "serviceBranch": match['serviceBranch']
                 })
             else:
                 results.append({"name": "Unknown", "rank": None, "unit": None})
